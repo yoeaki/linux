@@ -68,6 +68,23 @@
 > + -m num    //set the route jump number
 > + -n        //show the ip of domain
 > + -q num    //send num pakage to trace
+> 
+###1.5  instal  some application in different way
+###1.5  instal  some application in different way
+	1. yum 
+>   + install -y pakageName  
+>   
 
+	2.wget  
 
+ 1. wget link
+ 2. tar zxvf fileName
+ 3. ./configure
+ 4. make
+ 5. make && make install
 
+### 1.6 shell script
+	command collection!
+### 1.7 processes
++ ps -a(end all)、 -x(end to child)、  -e(all ps info)、  -f(complete info)
++ kill -9 pid
