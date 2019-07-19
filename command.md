@@ -1,4 +1,4 @@
-# linux的常用命令集合
+# 1.linux的常用命令集合
 ## 1.目录的操作
 ### 1.1 change directory 
 	1.Change directory command by cd
@@ -39,3 +39,35 @@
 > + use comand of **more** to look over the file info before 30% : **more 30% fileName**
 > +  use comand of **less** to look over the file info which can use PgUp and PgDn to operate : **less fileName**
 > + use comand of **tail-10** to look over the file info of top 10 line : **tail -10 fileName**
+
+### 1.4 There are command of ping、fping、traceroute 
+	ping : only can ping a host.
+	fping : can ping host of specified range.
+	traceroute : can show the host'route which next jump to end.  
+<br>
+
+	1.How to use **ping** and **ping'parameter**.
+> + ping ip
+> + -c  num    //ping a host on number
+> + -w  time   //how much time to wait for a can't arrive host.
+> + -i  time  //send a pakage to specified host of time interval
+
+	2.fping ip
+> + -a         //show some host of already passed
+> + -A        //exeamle: fping -A www.baidu.com--->222.12.15.10
+> + -c num   // ping numbers times every host when this host is alived.
+> + -e      //Return the time required for ping of every host.
+> + -f      //get the ip of file.
+> + -i     //set TTL live.
+> + -l     //loop to ping the host
+> + -p    //set a time interval
+> + -r num //if ping is failed,can ping num again.
+> + -u   // show the host that failed to pass.
+
+	3.traceroute 
+> + -m num    //set the route jump number
+> + -n        //show the ip of domain
+> + -q num    //send num pakage to trace
+
+
+
